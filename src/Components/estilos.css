@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+:root {
+    --fonte-letrix: "Orbitron", sans-serif;
+    --font-anagrama: "Martian Mono", monospace;
+    --cor-caixa-letra: #f7ca57;
+    --cor-botao: #13b03d;
+    --cor-branca: cornsilk;
+}
+
+.pagina-principal, .pagina-game {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-letras {
+    /* width: 10em; */   
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 5em;
+    background-color: var(--cor-caixa-letra);
+    border: none;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0.2em;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.letra {
+    font-family: var(--font-anagrama);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.titulo {
+    font-family: var(--fonte-letrix);
+    font-size: 5em;
+    color: var(--cor-branca);
+    letter-spacing: 0.3em;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo {
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.botao {
+    margin-top: 0.5em;
+    text-decoration: none;
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 65px;
+    color:var(--cor-branca);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-botao);
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-branca);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho span {
+    color: var(--cor-caixa-letra);
+}
+
+form {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.2em;
+    height: 2em;
+}
+
+form input::placeholder {
+    padding: 10px;
+}
+
+form button {
+    margin-left: 0.4em;
+    text-decoration: none;
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 1em;
+    padding: 14px 23px;
+    color: var(--cor-branca);
+    font-size: 1.2em;
+    font-weight: bold;    
+}
+
+form button:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-botao);
+}
+
+.pontuacao {
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.pontuacao span {
+    color: var(--cor-caixa-letra);
+}
